@@ -12,8 +12,9 @@ include ("PHP/conexao.php");
 	<title>Bem vindo à Microsoft</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+	<script src="JS/slide.js"></script>
 </head>
-<body>
+<body onLoad="slide1()">
 	<div id="container"> <!-- Começo container -->
 
 		<div id="topo"> <!-- Começo topo -->
@@ -51,7 +52,9 @@ include ("PHP/conexao.php");
 
 		<div id="conteudo">
 
-		<img class="img1" src="img/xbox.jpg" alt="" id="banner">
+			<div id="bener">
+				<img class="img1" src="img/xbox.jpg" alt="" id="banner">
+			</div>
 
 			<div id="noticias">
 
@@ -184,11 +187,5 @@ include ("PHP/conexao.php");
 		</div>
 
 	</div> <!-- Fim container -->
-
-	<script src="slide.js">
-	
-
-
-	</script>
 </body>
 </html>
