@@ -1,0 +1,91 @@
+/* Configurações globais */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* Área do topo */
+
+#container{
+	width: 1635px;
+	margin: 0 auto;
+}
+
+#topo{
+	height: 90px;
+	padding-top: 0;
+}
+
+.logo{
+	width: 137px;
+	float: left;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+#navegacao-esqueda ul{
+	margin-left: 40px;
+	float: left;
+}
+
+#navegacao-esqueda ul li{
+	float: left;
+}
+
+#navegacao-esqueda ul li a{
+	font-size: 13.5px;
+	display: block;
+	padding-top: 15px;
+	margin-left: 10px;
+	margin-top: 20px;
+	color: black;
+}
+
+#navegacao-direita ul{
+	float: right; 
+}
+
+#navegacao-direita ul li{
+	float: right; 
+}
+
+#navegacao-direita ul li a{
+	font-size: 13.5px;
+	float: right; 
+	display: block;
+	padding-top: 15px;
+	margin-left: 10px;
+	margin-top: 20px;
+	color: black;
+}
+#navegacao-esqueda ul li a:hover,
+#navegacao-direita ul li a:hover{
+	border-bottom: 2px solid black;
+}
+
+/* Conteudo */
+
+#conteudo{
+	margin: 0 auto;
+	width: 1600px;
+	border: 1px solid red;
+}
+
+#conteudo img{
+	width: 100%;
+}
