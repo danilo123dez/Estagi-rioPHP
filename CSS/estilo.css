@@ -21,7 +21,7 @@ a{
 /* Área do topo */
 
 #container{
-	width: 1635px;
+	width: 1600px;
 	margin: 0 auto;
 }
 
@@ -38,6 +38,10 @@ a{
 	left: 0px;
 }
 
+.margin-left-header{
+	margin-left: 30px;
+}
+
 #navegacao-esqueda ul{
 	margin-left: 40px;
 	float: left;
@@ -51,7 +55,6 @@ a{
 	font-size: 13.5px;
 	display: block;
 	padding-top: 15px;
-	margin-left: 10px;
 	margin-top: 20px;
 	color: black;
 }
@@ -83,9 +86,70 @@ a{
 #conteudo{
 	margin: 0 auto;
 	width: 1600px;
-	border: 1px solid red;
+	
 }
 
-#conteudo img{
+#conteudo .img1{
 	width: 100%;
+}
+
+#noticias{
+	margin-top: 35px;
+	height: 100px;
+	margin-left: 0px;
+}
+
+#noticias .not .lateral{
+	margin-left: 0px;
+}
+
+#noticias .not{
+	float: left;
+	
+}
+#noticias .not img{
+	width: 355px;
+	height: 236px;
+}
+
+#noticias .not p{
+	text-align: left;
+	margin-bottom: 35px;
+}
+
+.margin-left{
+	margin-left: 60px;
+}
+
+/* Footer */
+
+#footer{
+	clear: both;
+	height: 180px;
+}
+
+.margin-left-footer{
+	margin-left: 20px !important;
+}
+
+#footer .conteudos-footer{
+	float: left;
+	margin-left: 80px;
+}
+
+#footer .conteudos-footer{
+	margin-bottom: 70px;
+}
+
+#footer .conteudos-footer ul li{
+	padding-top: 15px;
+}
+
+#footer .conteudos-footer ul li a{
+	font-size: 0.8em;
+	color: gray;
+}
+
+#footer .conteudos-footer ul li h4{
+	color: DimGray;
 }
