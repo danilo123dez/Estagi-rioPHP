@@ -1,19 +1,19 @@
 <?php
 
-ini_set('display_startup_erros', 1);
+ini_set('display_startup_errors', 1);
 ini_set('display_errors', 1);
 error_reporting(-1);
+
 session_start();
+ob_start();
 
 include ("PHP/conexao.php");
 
-if(!empty($_SESSION['id'])){
-	header("Location: index_log.php");
+if(empty($_SESSION['id'])){
+	header("Location: index.php");
 }else{
 	
 }
-	
-
 
 ?>
 
@@ -48,8 +48,9 @@ if(!empty($_SESSION['id'])){
 				<div id="navegacao-direita">
 
 					<ul>
-					<li><img style="width: 35px; margin-top: 5px; padding-top: 15px; margin-left: 3px;" src="img/perfil.png" alt="Compras"></li>
-						<li><a href="login.php">Entrar</a></li>
+                        <li><img style="width: 35px; margin-top: 5px; padding-top: 15px; margin-left: 3px;" src="img/perfil.png" alt="Compras"></li>
+                        <li><a href="PHP/sair.php">Sair</a></li>
+                        <li><a href="#.php"><?php echo $_SESSION['nome']; ?></a></li>
 						<li><img style="width: 1em; margin-top: 16px; padding-top: 15px;" src="img/carrinho.png" alt="Compras"></li>
 						<li><a href="#">Carrinho</a></li>
 						<li><img style="width: 1em; margin-top: 16px; padding-top: 15px;" src="img/lupa.png" alt="Compras"></li>

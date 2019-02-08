@@ -6,6 +6,7 @@ include ("PHP/conexao.php");
 
 $botao_cadastra = filter_input(INPUT_POST, 'botao_cadastra', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
 
 if($botao_cadastra) {
     $dados_rc = filter_input_array(INPUT_POST, FILTER_DEFAULT);
@@ -46,7 +47,8 @@ if($botao_cadastra) {
     if (!$erro){
         $dados['senha'] = password_hash($dados['senha'], PASSWORD_DEFAULT);
 
-        $Enviar_dados = "INSERT INTO Usuario (email, senha) VALUES (
+        $Enviar_dados = "INSERT INTO Usuario (nome, email, senha) VALUES (
+            '" .$dados['nome']. "',
             '" .$dados['email']. "',
             '" .$dados['senha']. "'
             )";
@@ -81,6 +83,7 @@ if($botao_cadastra) {
                 <form method="POST">
                 <img class="logo" src="img/logo.png"> <br>
                 <h3>Criar conta</h3>
+                <input class="caixa-texto" name="nome" type="text" placeholder="nome"> <br>
                 <input class="caixa-texto" name="email" type="text" placeholder="nome@example.com"> <br>
                 <input class="caixa-texto" name="senha" type="password" placeholder="senha"> <br>
                 <p class="info"><a href="cadastro.php">Usar um número de telefone</a></p> <br>

@@ -2,11 +2,11 @@
 
 $Servidor = "172.17.0.3";
 $usuario = "danilo123dez";
-$senha = "banana pijama";
+$senhaaa = "banana pijama";
 $bd = "EstagioPHP";
 
 // Criando a conexão com o banco 
-$conn = mysqli_connect($Servidor, $usuario, $senha, $bd);
+$conn = mysqli_connect($Servidor, $usuario, $senhaaa, $bd);
 
 // checando a conexão com o banco
 

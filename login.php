@@ -18,13 +18,14 @@ include ("PHP/conexao.php");
         
         <div id="quadrado">
             <div id="form">
-                <form action="PHP/ValidaLogin.php">
+                <form method="POST" action="PHP/validalogin.php">
                 <img class="logo" src="img/logo.png"> <br>
                 <h3>Entrar</h3>
-                <input class="caixa-texto" type="text" placeholder="Email, Telefone ou skype"> <br>
+                <input class="caixa-texto" type="email" name="email" placeholder="Email"> <br>
+                <input class="caixa-texto" type="password" name="senha" placeholder="Senha"> <br>
                 <p class="info">Não tem uma conta? <a href="cadastro.php">Crie uma!</a></p> <br>
                 <p class="info"><a href="#">Esqueceu o nome de usuário</a></p>
-                <input class="botao" type="submit" name="" id="" value="Próximo">
+                <input class="botao" type="submit" name="btnLogin" id="" value="Entrar">
                 </form>
             </div>
         </div>
