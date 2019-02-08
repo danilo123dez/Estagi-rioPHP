@@ -99,6 +99,10 @@ a{
 	margin-left: 0px;
 }
 
+.not:hover{
+	background: lightgray;
+}
+
 #noticias .not .lateral{
 	margin-left: 0px;
 }
