@@ -1,0 +1,70 @@
+/* Configurações globais */
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: 0px;
+}
+
+/* Configurando o quadrado */
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/natureza.jpg) no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#quadrado{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+#form{
+    margin: 30px;
+}
+
+/* Formulário */
+
+.logo{
+    width: 150px;
+}
+
+.botao{
+    position: absolute;
+    top: 600px;
+    left: 990px;
+    background: #1D5EE8;
+    color: #fff;
+    width: 100px;
+    height: 35px;
+    border: 0px;
+}
+
+.caixa-texto{
+    margin-bottom: 5px;
+    width: 340px;
+    text-decoration: none;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+}
+
+.caixa-texto:focus{
+    border-bottom: 1px solid blue;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.info{
+    font-size: 0.8em;
+    margin-bottom: 0px;
+}
+
+.info a{
+    text-decoration: none;
+}
